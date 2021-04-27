@@ -6,7 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한국공항공사</title>
+    <!-- style -->
     <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/swiper.min.js"></script> -->
+
+
 </head>
 
 <body>
@@ -27,17 +41,323 @@
                 </ul>
             </div>
             <div id="menu">
+                <div id="lnb">
+                    <ul id="nav" class="cf">
+                        <li id="logo" class="fl">
+                            <img src="images/banner.png" alt="배너">
+                        </li>
+                        <li class="menu1 fl">
+                            <a href="#" title="KAC 소개">KAC 소개</a>
+                            <div id="width100">
+                                <ul class="menu_width cf">
+                                    <li class="fl">
+                                        <dl>
+                                            <dt><a href="#">공사소개</a></dt>
+                                            <dd><a href="#">공사소개</a></dd>
+                                            <dd><a href="#">경영진소개</a></dd>
+                                            <dd><a href="#">조직현황</a></dd>
+                                            <dd><a href="#">CI 및 캐릭터</a></dd>
+                                            <dd><a href="#">오시는길</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="fl">
+                                        <dl>
+                                            <dt><a href="#">CEO 인사말</a></dt>
+                                            <dd><a href="#">CEO 인사말</a></dd>
+                                            <dd><a href="#">CEO 프로필</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="fl">
+                                        <dl>
+                                            <dt><a href="#">경영전량</a></dt>
+                                            <dd><a href="#">미션</a></dd>
+                                            <dd><a href="#">비전2030</a></dd>
+                                            <dd><a href="#">핵심가치</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="fl">
+                                        <dl>
+                                            <dt><a href="#">인재채용</a></dt>
+                                            <dd><a href="#">KAC 인재상</a></dd>
+                                            <dd><a href="#">인사관리</a></dd>
+                                            <dd><a href="#">인재육성</a></dd>
+                                            <dd><a href="#">급여 및 복리후생</a></dd>
+                                            <dd><a href="#">채용공지</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="fl">
+                                        <dl>
+                                            <dt><a href="#">KAC Story</a></dt>
+                                            <dd><a href="#">연혁</a></dd>
+                                            <dd><a href="#">역대 CEO</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //.menu1 -->
+                            <li class="menu2 fl">
+                                <a href="#" title="KAC 혁신">KAC 혁신</a>
+                                <div id="width100">
+                                    <ul class="menu_width cf">
+                                        <li class="fl">
+                                            <dl>
+                                                <dt><a href="#">추진전략 및 체계</a></dt>
+                                                <dt class="mt306"><a href="#">공정거래 자율준수</a></dt>
+                                            </dl>
+                                        </li>
+                                        <li class="fl">
+                                            <dl>
+                                                <dt><a href="#">KAC 혁신활동</a></dt>
+                                                <dt class="mt306"><a href="#">기업성장응답센터</a></dt>
+                                                <dd><a href="#">기업성장응답센터 안내</a></dd>
+                                                <dd><a href="#">공지사항</a></dd>
+                                                <dd><a href="#">규제 애로 제안</a></dd>
+                                                <dd><a href="#">기업민원 보호 서비스 헌장</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li class="fl">
+                                            <dl>
+                                                <dt><a href="#">사회책임경영</a></dt>
+                                                <dd><a href="#">소개</a></dd>
+                                                <dd><a href="#">추진체계</a></dd>
+                                                <dd><a href="#">이해관계자 참여</a></dd>
+                                                <dd><a href="#">중대성 평가</a></dd>
+                                                <dd><a href="#">경제 성과</a></dd>
+                                                <dd><a href="#">사회 성과</a></dd>
+                                                <dd><a href="#">환경 성과</a></dd>
+                                                <dd><a href="#">사회책임경영보고서</a></dd>
+                                                <dd><a href="#">사회책임경영브리프</a></dd>
+                                                <dt class="mt52"><a href="#">국민참여채널(KOC)</a></dt>
+                                            </dl>
+                                        </li>
+                                        <li class="fl">
+                                            <dl>
+                                                <dt><a href="#">윤리경영</a></dt>
+                                                <dd><a href="#">윤리규범</a></dd>
+                                                <dd><a href="#">프로그램</a></dd>
+                                                <dd><a href="#">모니터링</a></dd>
+                                                <dd><a href="#">인권경영</a></dd>
+                                                <dd><a href="#">자료실</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li class="fl">
+                                            <dl>
+                                                <dt><a href="#">사회공헌</a></dt>
+                                                <dd><a href="#">사회공헌소개</a></dd>
+                                                <dd><a href="#">사회봉사단 구성</a></dd>
+                                                <dd><a href="#">사회봉사단 구성</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //.menu2 -->
+                                <li class="menu3 fl">
+                                    <a href="#" title="열린경영">열린경영</a>
+                                    <div id="width100">
+                                        <ul class="menu_width cf">
+                                            <li class="fl">
+                                                <dl>
+                                                    <dt><a href="#">경영공시</a></dt>
+                                                    <dd><a href="#">경영공시 목차</a></dd>
+                                                    <dd><a href="#">경영공시 개요</a></dd>
+                                                    <dd><a href="#">경영공시 FAQ</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="fl">
+                                                <dl>
+                                                    <dt><a href="#">입찰정보</a></dt>
+                                                    <dd><a href="#">입찰공지</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="fl">
+                                                <dl>
+                                                    <dt><a href="#">계약정보</a></dt>
+                                                    <dd><a href="#">수의계약 정보공개</a></dd>
+                                                    <dd><a href="#">공항별 임대현황</a></dd>
+                                                    <dd><a href="#">하도급계약자료 공개</a></dd>
+                                                    <dd><a href="#">주요장비구매규격</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="fl">
+                                                <dl>
+                                                    <dt><a href="#">직원국외출장정보</a></dt>
+                                                    <dd><a href="#">해외출장보고</a></dd>
+                                                    <dd><a href="#">임원해외출장현황</a></dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //.menu3 -->
+                                    <li class="menu4 fl">
+                                        <a href="#" title="업무지원">업무지원</a>
+                                        <div id="width100">
+                                            <ul class="menu_width cf">
+                                                <li class="fl">
+                                                    <dl>
+                                                        <dt><a href="#">보호구역출입증</a></dt>
+                                                        <dd><a href="#">보호구역출입증 안내</a></dd>
+                                                        <dd><a href="#">보호구역출입증 규정</a></dd>
+                                                        <dt class="mt162"><a href="#">공항소방 구조대</a></dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="fl">
+                                                    <dl>
+                                                        <dt><a href="#">공항시설사용</a></dt>
+                                                        <dd><a href="#">공항시설사용료</a></dd>
+                                                        <dd><a href="#">항공사 사용계약</a></dd>
+                                                        <dd><a href="#">임대시설 사용안내</a></dd>
+                                                        <dd><a href="#">이동지역</a></dd>
+                                                        <dt class="mt106"><a href="#">전자고지</a></dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="fl">
+                                                    <dl>
+                                                        <dt><a href="#">안전관리시스템</a></dt>
+                                                        <dd><a href="#">개요</a></dd>
+                                                        <dd><a href="#">안전정책</a></dd>
+                                                        <dd><a href="#">안전성과지표 관리대상</a></dd>
+                                                        <dd><a href="#">안전회보</a></dd>
+                                                        <dd><a href="#">자발적 비밀보고</a></dd>
+                                                        <dd><a href="#">관련사이트</a></dd>
+                                                        <dt class="mt50"><a href="#">월정기권 납부</a></dt>
+                                                    </dl>
+                                                </li>
+                                                <li class="fl">
+                                                    <dl>
+                                                        <dt><a href="#">산업안전보건</a></dt>
+                                                        <dd><a href="#">개요</a></dd>
+                                                        <dd><a href="#">안전보건방침</a></dd>
+                                                        <dd><a href="#">안전보건경영시스템</a></dd>
+                                                        <dd><a href="#">안전관련 법령</a></dd>
+                                                        <dd><a href="#">안전신고</a></dd>
+                                                        <dd><a href="#">관련사이트</a></dd>
+                                                        <dt class="mt46"><a href="#">사규</a></dt>
+                                                        <dd><a href="#">정관 및 사규</a></dd>
+                                                        <dd><a href="#">제개정 예정 사규</a></dd>
+                                                    </dl>
+                                                </li>
+                                                <li class="fl">
+                                                    <dl>
+                                                        <dt><a href="#">특허이전</a></dt>
+                                                        <dd><a href="#">특허 허여</a></dd>
+                                                        <dd><a href="#">KAC 특허보유현황</a></dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //.menu4 -->
 
-                <div id="banner"><img src="images/banner.png" alt="배너"></div>
-                <div id="nav">
-                    <ul>
-                        <li><a href="#">KAC 소개</a></li>
-                        <li><a href="#">KAC 혁신</a></li>
-                        <li><a href="#">열린경영</a></li>
-                        <li><a href="#">업무지원</a></li>
-                        <li><a href="#">사이버홍보실</a></li>
-                        <li><a href="#">고객참여</a></li>
-                        <li><a href="#">정보공개</a></li>
+                                        <li class="menu5 fl">
+                                            <a href="#" title="사이버홍보실">사이버홍보실</a>
+                                            <div id="width100">
+                                                <ul class="menu_width cf">
+                                                    <li class="fl">
+                                                        <dl>
+                                                            <dt><a href="#">보도자료</a></dt>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="fl">
+                                                        <dl>
+                                                            <dt><a href="#">간행물</a></dt>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="fl">
+                                                        <dl>
+                                                            <dt><a href="#">포토갤러리</a></dt>
+                                                        </dl>
+                                                    </li>
+                                                    <li class="fl">
+                                                        <dl>
+                                                            <dt><a href="#">안전알리미</a></dt>
+                                                        </dl>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //.menu5 -->
+                                            <li class="menu6 fl">
+                                                <a href="#" title="고객참여">고객참여</a>
+                                                <div id="width100">
+                                                    <ul class="menu_width cf">
+                                                        <li class="fl">
+                                                            <dl>
+                                                                <dt><a href="#">공지사항</a></dt>
+                                                            </dl>
+                                                        </li>
+                                                        <li class="fl">
+                                                            <dl>
+                                                                <dt><a href="#">민원 및 서식</a></dt>
+                                                                <dd><a href="#">민원안내</a></dd>
+                                                                <dd><a href="#">서식안내</a></dd>
+                                                            </dl>
+                                                        </li>
+                                                        <li class="fl">
+                                                            <dl>
+                                                                <dt><a href="#">고객의 소리</a></dt>
+                                                                <dd><a href="#">일반고객</a></dd>
+                                                                <dd><a href="#">Airport Community</a></dd>
+                                                                <dd><a href="#">공개목록</a></dd>
+                                                                <dd><a href="#">안전신문고</a></dd>
+                                                            </dl>
+                                                        </li>
+                                                        <li class="fl">
+                                                            <dl>
+                                                                <dt><a href="#">설문조사</a></dt>
+                                                            </dl>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- //.menu6 -->
+                                                <li class="menu7 fl">
+                                                    <a href="#" title="정보공개">정보공개</a>
+                                                    <div id="width100">
+                                                        <ul class="menu_width cf">
+                                                            <li class="fl">
+                                                                <dl>
+                                                                    <dt><a href="#">공공데이터개방</a></dt>
+                                                                    <dd><a href="#">공공데이터소개</a></dd>
+                                                                    <dd><a href="#">Open API</a></dd>
+                                                                    <dd><a href="#">파일데이터</a></dd>
+                                                                    <dd><a href="#">공공데이터 소동창구</a></dd>
+                                                                    <dt class="mt80"><a href="#">항공통계</a></dt>
+                                                                </dl>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <dl>
+                                                                    <dt><a href="#">정보공개제도</a></dt>
+                                                                    <dd><a href="#">제도안내</a></dd>
+                                                                    <dd><a href="#">정보공개절차</a></dd>
+                                                                    <dd><a href="#">정보공개 관련자료</a></dd>
+                                                                    <dd><a href="#">정보공개청구</a></dd>
+                                                                    <dd><a href="#">불복구제절차</a></dd>
+                                                                </dl>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <dl>
+                                                                    <dt><a href="#">사전정보 공개</a></dt>
+                                                                    <dd><a href="#">사전정보공표</a></dd>
+                                                                    <dd><a href="#">행정정보목록</a></dd>
+                                                                    <dd><a href="#">정보공개 국민제안</a></dd>
+                                                                </dl>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <dl>
+                                                                    <dt><a href="#">사업실명제</a></dt>
+                                                                    <dd><a href="#">2021년</a></dd>
+                                                                    <dd><a href="#">2020년</a></dd>
+                                                                    <dd><a href="#">2019년</a></dd>
+                                                                    <dd><a href="#">2018년</a></dd>
+                                                                    <dd><a href="#">2017년</a></dd>
+                                                                    <dd><a href="#">2016년</a></dd>
+                                                                </dl>
+                                                            </li>
+                                                            <li class="fl">
+                                                                <dl>
+                                                                    <dt><a href="#">A-CDM</a></dt>
+                                                                </dl>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- //.menu7 -->
                     </ul>
                 </div>
 
@@ -67,61 +387,549 @@
                     <button class="top_search_btn">검색</button>
                 </div>
             </div>
-        </header>
-        <section>
+
+
             <div id="main_visual">
                 <div id="main">
                     <div id="innerMain">
                         <div id="sliderWrap">
-                            <div class="sliderbox">
-                                <div class="sliderboxImg">
-                                    <img src="images/main_img2..png" alt="openBIM기반 공항시설정보 통합관리기술">
-                                </div>
-                                <div class="sliderboxtext">
-                                    <a href="#" target="_blank"><span>한국공항공사, 세계 최초로 개발한 「openBIM기반 공항시설정보 통합관리기술」 국제 무대에서 공식 인증</span></a> time
-                                    <time>2020.11.30</time>
-                                </div>
-                            </div>
-                            <div class="pageIndex">
-                                <ul class="slick_dots" role="tab" style="display: block;">
-                                    <li class="slick_active" aria-hidden="true" role="tab" aria-selected="false" aria-controls="slickslide0" id="slickslide0">
-                                        <button type="button" class="default">0번째 슬라이드</button>
+                            <div class="sliderWrap">
+                                <ul class="auto_slider">
+                                    <li>
+                                        <a href="#"> <img src="images/main_img4..jpg" alt="openBIM기반 공항시설정보 통합관리기술"></a>
+                                        <div class="sliderboxtext">
+                                            <a href="#" target="_blank">
+                                                <span>항공권예약부터 주차예약까지 ONE-STOP! KAC 통합예약사이트 오픈</span>
+                                            </a>
+                                            <time>2020.12.17</time>
+                                        </div>
                                     </li>
-                                    <li class="slick_active" aria-hidden="false" role="tab" aria-selected="true" aria-controls="slickslide1" id="slickslide1">
-                                        <button type="button" class="default">1번째 슬라이드</button>
+                                    <li>
+                                        <a href="#"> <img src="images/main_img5..png" alt="openBIM기반 공항시설정보 통합관리기술"></a>
+                                        <div class="sliderboxtext">
+                                            <a href="#" target="_blank">
+                                                <span>최저가 항공권 확인하기</span>
+                                            </a>
+                                            <time>2020.12.08</time>
+                                        </div>
                                     </li>
-                                    <li class="slick_active" aria-hidden="false" role="tab" aria-selected="true" aria-controls="slickslide2" id="slickslide2">
-                                        <button type="button" class="default">2번째 슬라이드</button>
+                                    <li>
+                                        <a href="#"> <img src="images/main_img1.png" alt="openBIM기반 공항시설정보 통합관리기술"></a>
+                                        <div class="sliderboxtext">
+                                            <a href="#" target="_blank">
+                                                <span>온라인 주차예약 바로가기</span>
+                                            </a>
+                                            <time>2020.12.08</time>
+                                        </div>
                                     </li>
-                                    <li class="slick_active" aria-hidden="false" role="tab" aria-selected="true" aria-controls="slickslide3" id="slickslide4">
-                                        <button type="button" class="default">3번째 슬라이드</button>
-                                    </li>
-                                    <li class="controller" aria-selected="false">
-                                        <button type="button">정지</button>
+                                    <li>
+                                        <a href="#"> <img src="images/main_img2..png" alt="openBIM기반 공항시설정보 통합관리기술"></a>
+                                        <div class="sliderboxtext">
+                                            <a href="#" target="_blank">
+                                                <span>한국공항공사, 세계 최초로 개발한 「openBIM기반 공항시설정보 통합관리기술」 국제 무대에서 공식 인증</span>
+                                            </a>
+                                            <time>2020.11.30</time>
+                                        </div>
                                     </li>
                                 </ul>
+
+                                <div class="pageIndex">
+                                    <ul>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                        <li class="page_stop"></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div id="ectWrap"></div>
+                        <div id="ectWrap">
+                            <div class="newflash">
+                                <p class="etcTitle">
+                                    실시간 운항정보
+                                    <span>운항스케줄은 항공사 사정으로 변경될 수 있습니다.</span>
+                                </p>
+                                <div class="optselBtn">
+                                    <button class="defaulton">출발</button>
+                                    <button class="default">도착</button>
+                                </div>
+                                <fieldset class="optselect">
+                                    <legend>실시간 운항정보 검색영역</legend>
+                                    <div class="optselect_fl airportSel">
+                                        <fieldset>
+                                            <label>
+                                                <select name="공항선택">
+                                                    <option value="공항선택">공항선택</option>
+                                                    <option value="서울/김포">서울/김포</option>
+                                                    <option value="부산/김해">부산/김해</option>
+                                                    <option value="제주">제주</option>
+                                                    <option value="대구">대구</option>
+                                                    <option value="울산">울산</option>
+                                                    <option value="청주">청주</option>
+                                                    <option value="무안">무안</option>
+                                                    <option value="광주">광주</option>
+                                                    <option value="여수">여수</option>
+                                                    <option value="포항">포항</option>
+                                                    <option value="양양">양양</option>
+                                                    <option value="사천">사천</option>
+                                                    <option value="군산">군산</option>
+                                                    <option value="횡성/원주">횡성/원주</option>
+                                                </select>
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                    <div class="optselect_fl timeSel">
+                                        <fieldset>
+                                            <label>
+                                                <select name="시간">
+                                                    <option value="00 시">00 시</option>
+                                                    <option value="01 시">01 시</option>
+                                                    <option value="02 시">02 시</option>
+                                                    <option value="03 시">03 시</option>
+                                                    <option value="04 시">04 시</option>
+                                                    <option value="05 시">05 시</option>
+                                                    <option value="06 시">06 시</option>
+                                                    <option value="07 시">07 시</option>
+                                                    <option value="08 시">08 시</option>
+                                                    <option value="09 시">09 시</option>
+                                                    <option value="10 시">10 시</option>
+                                                    <option value="11 시">11 시</option>
+                                                    <option value="12 시">12 시</option>
+                                                    <option value="13 시">13 시</option>
+                                                    <option value="14 시">14 시</option>
+                                                    <option value="15 시">15 시</option>
+                                                    <option value="16 시">16 시</option>
+                                                    <option value="17 시">17 시</option>
+                                                    <option value="18 시">18 시</option>
+                                                    <option value="19 시">19 시</option>
+                                                    <option value="20 시">20 시</option>
+                                                    <option value="21 시">21 시</option>
+                                                    <option value="22 시">22 시</option>
+                                                    <option value="23 시">23 시</option>
+                                                </select>
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                    <p>~</p>
+                                    <div class="optselect_fl timeSel timeSel2">
+                                        <fieldset>
+                                            <label>
+                                                <select name="시간">
+                                                    <option value="00 시">00 시</option>
+                                                    <option value="01 시">01 시</option>
+                                                    <option value="02 시">02 시</option>
+                                                    <option value="03 시">03 시</option>
+                                                    <option value="04 시">04 시</option>
+                                                    <option value="05 시">05 시</option>
+                                                    <option value="06 시">06 시</option>
+                                                    <option value="07 시">07 시</option>
+                                                    <option value="08 시">08 시</option>
+                                                    <option value="09 시">09 시</option>
+                                                    <option value="10 시">10 시</option>
+                                                    <option value="11 시">11 시</option>
+                                                    <option value="12 시">12 시</option>
+                                                    <option value="13 시">13 시</option>
+                                                    <option value="14 시">14 시</option>
+                                                    <option value="15 시">15 시</option>
+                                                    <option value="16 시">16 시</option>
+                                                    <option value="17 시">17 시</option>
+                                                    <option value="18 시">18 시</option>
+                                                    <option value="19 시">19 시</option>
+                                                    <option value="20 시">20 시</option>
+                                                    <option value="21 시">21 시</option>
+                                                    <option value="22 시">22 시</option>
+                                                    <option value="23 시">23 시</option>
+                                                </select>
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                    <div class="optselect_fl airlineSel">
+                                        <fieldset>
+                                            <label>
+                                                <select name="항공사 선택">
+                                                    <option value="항공사 선택">항공사 선택</option>
+                                                    <option value="대한항공">대한항공</option>
+                                                    <option value="아시아나">아시아나</option>
+                                                    <option value="에어부산">에어부산</option>
+                                                    <option value="에어서울">에어서울</option>
+                                                    <option value="제주항공">제주항공</option>
+                                                    <option value="진에어">진에어</option>
+                                                    <option value="티웨이">티웨이</option>
+                                                    <option value="하이에어">하이에어</option>
+                                                    <option value="플라이강원">플라이강원</option>
+                                                </select>
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                    <button .airsearchBtn> 조회</button>
+                                </fieldset>
+                            </div>
+                            <div class="mainNotice">
+                                <p>공지사항 및 주요안내</p>
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>[보도자료] 한국공항공사, UAM Vertiport 설계 아이디어 공모전 시상</span></a>
+                                        <time>2021.04.12</time>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>[공지사항] 제주공항 중소상공인 수출상품 판매홍보관 입점 협력업체 모집</span></a>
+                                        <time>2021.04.02</time>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>[공지사항] 내륙노선 연계 뉴노멀 항공여행상품 육성을 위한 협력여행사 선정 사업 공고</span></a>
+                                        <time>2021.04.02</time>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>[보도자료] 한국공항공사, 코로나19 위기극복 80억원 규모 상생협력펀드 조성</span></a>
+                                        <time>2021.03.24</time>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>[보도자료] 김포국제공항 SNS 홍보 서포터즈 서류 결과 발표</span></a>
+                                        <time>2021.03.22</time>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>[보도자료] 손창완 한국공항공사 사장, ‘어린이 교통안전 릴레이 챌린지’ 동참</span></a>
+                                        <time>2021.03.19</time>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="frequencyMenu">
+                                <p>자주찾는 메뉴</p>
+                                <ul>
+                                    <li><span class="frclick1">교통안내</span></li>
+                                    <li><span class="frclick2">주차안내</span></li>
+                                    <li><span class="frclick3">시설안내</span></li>
+                                    <li><a href="#"><span class="frclick4">항공통계</span></a></li>
+                                </ul>
+
+                                <div class="local">
+                                    <a href="#">김포</a>
+                                    <a href="#">김해</a>
+                                    <a href="#">대구</a>
+                                    <a href="#">청주</a>
+                                    <a href="#">무안</a>
+                                    <a href="#">양양</a>
+                                    <a href="#">울산</a>
+                                    <a href="#">광주</a>
+                                    <a href="#">여수</a>
+                                    <a href="#">포항</a>
+                                    <a href="#">사천</a>
+                                    <a href="#">군산</a>
+                                    <a href="#">원주</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="quick_menu">
-                <div class="reservation"></div>
+                <a href="#" class="reservation">
+                    <span>통합예약 바로가기</span>
+                    <span>상품을 한번에 예약하세요.</span>
+                </a>
                 <div class="sliderMenu">
-                    <div class="icon1"></div>
-                    <div class="icon2"></div>
-                    <div class="icon3"></div>
-                    <div class="icon4"></div>
-                    <div class="icon5"></div>
-                    <div class="icon6"></div>
-                    <div class="icon7"></div>
-                    <div class="icon8"></div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico1.png" alt="항공권 예약">
+                            <span>항공권 예약</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico2.png" alt="주차예약">
+                            <span>주차예약</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico3.png" alt="주차예약">
+                            <span>렌터카 예약</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico4.png" alt="주차예약">
+                            <span>호텔예약</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico5.png" alt="주차예약">
+                            <span>여행상품 예약</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico6.png" alt="주차예약">
+                            <span>교통약자 예약</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/main_ico7.png" alt="주차예약">
+                            <span>문화공연 예약</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="KAC">
+                    <img src="images/main_ico8.png" alt="KAC 신문고">
+                    <span>KAC 신문고</span>
+                </a>
+            </div>
+
+        </header>
+        <section>
+            <div id="contents1">
+                <div id="mainvisual_map">
+                    <div class="map_left">
+                        <div class="mapPt"></div>
+                        <div class="mapTxt">
+                            <div class="txt">
+                                <p class="maptxt1 redLine">네트워크</p>
+                                <p class="maptxt2 mianTxt">Airport map</p>
+                                <p class="maptxt3">한국공항공사가 운영관리하는 <br> 국내 14개 공항을 소개합니다.</p>
+                                <div class="ectBox">
+                                    <span>
+                                        <img src="images/icon_MapEtc1.png" alt="국제공항">
+                                        <p class="mapEtc">국제공항</p>
+                                    </span>
+                                    <span>
+                                        <img src="images/icon_MapEtc2.png" alt="국내공항">
+                                        <p class="mapEtc">국내공항</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_right">
+                        <div class="rightBox">
+                            <div class="rightTxt">
+                                <h2>포항공항</h2>
+                                <div class="weather">
+                                    <span><p>18</p></span>
+                                    <span><p>맑음</p></span>
+                                    <span><img src="images/sun.svg" alt="sun" width="100" height="100"></span>
+                                </div>
+                                <div class="bottomTxt">
+                                    <p>주소:37926 경북 포항시 남구 동해안 일월로 18</p>
+                                    <p>바로가기</p>
+                                </div>
+                            </div>
+                            <div class="airportImg"></div>
+                        </div>
+                        <div class="imgBox"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="contents2">
+                <div class="mainVisual2">
+                    <div class="newsroom">
+                        <div class="newsroomTxt">
+                            <p class="redLine">공사소식</p>
+                            <p class="mianTxt">Newsroom</p>
+                        </div>
+                    </div>
+                    <div class="newsBtn">
+                        <ul class="nBtn">
+                            <li class="nBtn1 on">공지사항</li>
+                            <li class="nBtn2">보도자료</li>
+                            <li class="nBtn3">채용공고</li>
+                        </ul>
+                    </div>
+                    <div class="sliderWrap">
+                        <ul class="multi_slider">
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">자회사관리부</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.04</p>
+                                        <p class="todayTxt2">22</p>
+                                    </div>
+                                    <p class="titleTxt">항공보안파트너스(주) 임원 초빙 공고</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">항공마케팅부</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.04</p>
+                                        <p class="todayTxt2">19</p>
+                                    </div>
+                                    <p class="titleTxt">내륙노선 연계 뉴노멀 항공여행상품 육성을 위한 협력여행사 선정</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">공정경제팀</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.04</p>
+                                        <p class="todayTxt2">15</p>
+                                    </div>
+                                    <p class="titleTxt">KAC 사회공헌 아이디어 공모전 수상 발표</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">사회가치기획팀</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.04</p>
+                                        <p class="todayTxt2">02</p>
+                                    </div>
+                                    <p class="titleTxt">제주공항 중소상공인 수출상품 판매홍보관 입점 협력업체 모집</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">항공마케팅부</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.04</p>
+                                        <p class="todayTxt2">02</p>
+                                    </div>
+                                    <p class="titleTxt">내륙노선 연계 뉴노멀 항공여행상품 육성을 위한 협력여행사 선정</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">건설사업팀</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.03</p>
+                                        <p class="todayTxt2">31</p>
+                                    </div>
+                                    <p class="titleTxt">2021년도 건설공사 안전점검 수행기관 등록명부 공개</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">서울운영계획부</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.03</p>
+                                        <p class="todayTxt2">31</p>
+                                    </div>
+                                    <p class="titleTxt">내륙노선 연계 뉴노멀 항공여행상품 육성을 위한 협력여행사 선정</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slideBox">
+                                    <p class="titleBox">항공마케팅부</p>
+                                    <div class="todayTxt">
+                                        <p class="todayTxt1">2021.03</p>
+                                        <p class="todayTxt2">22</p>
+                                    </div>
+                                    <p class="titleTxt">김포국제공항 SNS 홍보 서포터즈 서류 결과 발표</p>
+                                    <a href="#"><img src="images/icon_Newsasrrow.png" width="37" height="19" alt="asrrow"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="board.html">더보기</a>
+                    </div>
+                </div>
+            </div>
+            <div id="contents3">
+                <div class="con3Layout">
+                    <div class="con3Center">
+                        <p>사회공헌</p>
+                        <p>Social Value</p>
+                        <p>기업과 사회, 환경이 공존할 수 있도록 지속적으로 사회적 책임을 실천하고 있습니다.</p>
+                        <div class="conIcon">
+                            <a href="#" style="top:0px; opacity:1;">
+                                <div class="icon">
+                                    <img src="images/icon_Social1.png" alt="Social1">
+                                    <p>나눔의 실천</p>
+                                    <span>바로가기</span>
+                                </div>
+                                <div class="hidden">
+                                    <img src="images/icon_Social1_hover.png" alt="Social1_hover">
+                                    <p>다문화가정 지원 언어교실 본격 추진</p>
+                                </div>
+                            </a>
+                            <a href="#" style="top:0px; opacity:1;">
+                                <div class="icon">
+                                    <img src="images/icon_Social2.png" alt="Social2">
+                                    <p class="midBeAf">깨끗한 공기업</p>
+                                    <span>바로가기</span>
+                                </div>
+                                <div class="hidden">
+                                    <img src="images/icon_Social2_hover.png" alt="Social2_hover">
+                                    <p>신뢰받는 청렴 공기업을 위한 활동</p>
+                                </div>
+                            </a>
+                            <a href="#" class="mj0" style="top:0px; opacity:1;">
+                                <div class="icon">
+                                    <img src="images/icon_Social3.png" alt="Social3">
+                                    <p>친환경 공항</p>
+                                    <span>바로가기</span>
+                                </div>
+                                <div class="hidden">
+                                    <img src="images/icon_Social3_hover.png" alt="Social3_hover">
+                                    <p>미래 세대를 위한 친환경 공항을 구현</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contents4">
+                <div class="con4layout">
+                    <div class="career">
+                        <div class="careerTxt">
+                            <p class="redLine">인재채용</p>
+                            <p class="mianTxt">Career</p>
+                            <p>열정과 실천의지를 가지고 있는 인재를 기다립니다.</p>
+                            <div class="move">
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="careerImg">
+                            <img src="images/career.png" alt="career">
+                        </div>
+                    </div>
+                </div>
+                <div id="bannerSlide">
+                    <div class="bnsliderWrap">
+                        <ul class="multi_slider2">
+                            <li><img src="images/banner1.jpg" alt="#"></li>
+                            <li><img src="images/banner2.jpg" alt="#"></li>
+                            <li><img src="images/banner3.jpg" alt="#"></li>
+                            <li><img src="images/banner4.png" alt="#"></li>
+                            <li><img src="images/banner5.jpg" alt="#"></li>
+                            <li><img src="images/banner6.jpg" alt="#"></li>
+                            <li><img src="images/banner7.jpg" alt="#"></li>
+                            <li><img src="images/banner8.jpg" alt="#"></li>
+                            <li><img src="images/banner9.PNG" alt="#"></li>
+                            <li><img src="images/banner10.jpg" alt="#"></li>
+                            <li><img src="images/banner11.jpg" alt="#"></li>
+                            <li><img src="images/banner12.jpg" alt="#"></li>
+                            <li><img src="images/banner13.png" alt="#"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div id="footerWrap">
+                <div class="footerTop">
+                    <div class="ftLeft"></div>
+                    <div class="ftRight"></div>
+                </div>
+                <div class="footerBottom">
+                    <div class="fbLeft"></div>
+                    <div class="fbRight"></div>
+                </div>
+            </div>
+        </footer>
     </div>
+
 </body>
 
 </html>
