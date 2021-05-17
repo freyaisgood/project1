@@ -87,5 +87,118 @@ $(function() {
         $('.nBtn3').addClass('on');
         $('.nBtn1').removeClass('on');
         $('.nBtn2').removeClass('on');
+    });
+
+
+
+    // menu hover
+
+
+    var $window = $(window);
+    var $nav = $('#nav li');
+
+    $nav.hover(
+        function() {
+            $('#top').addClass('bg');
+            $('#top>ul>li>a').addClass('bg');
+            $('#menu>#lnb').addClass('bg');
+            $('#nav li>a').addClass('bg');
+            $('#logo>a').addClass('bg');
+            $('#gnb .gnb_btn .top_airport').addClass('bg');
+            $('#gnb .top_search_btn').addClass('bg');
+            $('.top_popup>button').addClass('bg');
+            $('#width100').addClass('bg');
+        },
+        function() {
+            $('#top').removeClass('bg');
+            $('#top>ul>li>a').removeClass('bg');
+            $('#menu>#lnb').removeClass('bg');
+            $('#nav li>a').removeClass('bg');
+            $('#logo>a').removeClass('bg');
+            $('#gnb .gnb_btn .top_airport').removeClass('bg');
+            $('#gnb .top_search_btn').removeClass('bg');
+            $('.top_popup>button').removeClass('bg');
+            $('#width100').removeClass('bg');
+
+        });
+    $window.scroll(function() {
+        var sct = $window.scrollTop();
+        if (sct > 10) {
+            $('#top').addClass('bg');
+            $('#top>ul>li>a').addClass('bg');
+            $('#menu>#lnb').addClass('bg');
+            $('#nav li>a').addClass('bg');
+            $('#logo>a').addClass('bg');
+            $('#gnb .gnb_btn .top_airport').addClass('bg');
+            $('#gnb .top_search_btn').addClass('bg');
+            $('.top_popup>button').addClass('bg');
+            $nav.hover(
+                function() {
+                    $('#top').addClass('bg');
+                    $('#top>ul>li>a').addClass('bg');
+                    $('#menu>#lnb').addClass('bg');
+                    $('#nav li>a').addClass('bg');
+                    $('#logo>a').addClass('bg');
+                    $('#gnb .gnb_btn .top_airport').addClass('bg');
+                    $('#gnb .top_search_btn').addClass('bg');
+                    $('.top_popup>button').addClass('bg');
+                },
+                function() {
+                    $('#top').addClass('bg');
+                    $('#top>ul>li>a').addClass('bg');
+                    $('#menu>#lnb').addClass('bg');
+                    $('#nav li>a').addClass('bg');
+                    $('#logo>a').addClass('bg');
+                    $('#gnb .gnb_btn .top_airport').addClass('bg');
+                    $('#gnb .top_search_btn').addClass('bg');
+                    $('.top_popup>button').addClass('bg');
+                });
+        } else {
+            $('#top').removeClass('bg');
+            $('#top>ul>li>a').removeClass('bg');
+            $('#menu>#lnb').removeClass('bg');
+            $('#nav li>a').removeClass('bg');
+            $('#logo>a').removeClass('bg');
+            $('#gnb .gnb_btn .top_airport').removeClass('bg');
+            $('#gnb .top_search_btn').removeClass('bg');
+            $('.top_popup>button').removeClass('bg');
+            $nav.hover(
+                function() {
+                    $('#top').addClass('bg');
+                    $('#top>ul>li>a').addClass('bg');
+                    $('#menu>#lnb').addClass('bg');
+                    $('#nav li>a').addClass('bg');
+                    $('#logo>a').addClass('bg');
+                    $('#gnb .gnb_btn .top_airport').addClass('bg');
+                    $('#gnb .top_search_btn').addClass('bg');
+                    $('.top_popup>button').addClass('bg');
+                },
+                function() {
+                    $('#top').removeClass('bg');
+                    $('#top>ul>li>a').removeClass('bg');
+                    $('#menu>#lnb').removeClass('bg');
+                    $('#nav li>a').removeClass('bg');
+                    $('#logo>a').removeClass('bg');
+                    $('#gnb .gnb_btn .top_airport').removeClass('bg');
+                    $('#gnb .top_search_btn').removeClass('bg');
+                    $('.top_popup>button').removeClass('bg');
+                });
+        }
+
+
     })
+
+    /* 맵 */
+    var mapPt = [];
+    var rightTxt = [];
+    mapPt = $('.mapPt>a');
+    rightTxt = $('.rightTxt>div');
+    mapPt.click(function() {
+        var tg = $(this);
+        var tgi = tg.index();
+        rightTxt.hide();
+        rightTxt.eq(tgi).show();
+    })
+
+
 })

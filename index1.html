@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한국공항공사</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- style -->
     <link rel="stylesheet" href="css/index1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/swiper.css">
@@ -16,6 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
     <script src="js/script.js"></script>
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="js/swiper.min.js"></script> -->
@@ -24,6 +28,14 @@
 </head>
 
 <body>
+    <div id="skip">
+        <a href="#menu" rel="bookmark">전체 메뉴 바로가기</a>
+        <a href="#main_visual" rel="bookmark">메인 바로가기</a>
+        <a href="#contents1" rel="bookmark">전국공항맵 바로가기</a>
+        <a href="#contents2" rel="bookmark">공사소식 바로가기</a>
+        <a href="#contents3" rel="bookmark">사회공헌 바로가기</a>
+        <a href="#contents4" rel="bookmark">인재채용 바로가기</a>
+    </div>
     <div id="wrab">
         <header>
             <div id="top">
@@ -36,16 +48,14 @@
                     </li>
                     <li class="top_popup">
                         <a href="#">팝업열기</a>
-                        <img src="images/popup_select.png" alt="팝업열기">
+                        <button>팝업열기</button>
                     </li>
                 </ul>
             </div>
             <div id="menu">
+                <div id="logo"> <a href="#">logo</a></div>
                 <div id="lnb">
                     <ul id="nav" class="cf">
-                        <li id="logo" class="fl">
-                            <img src="images/banner.png" alt="배너">
-                        </li>
                         <li class="menu1 fl">
                             <a href="#" title="KAC 소개">KAC 소개</a>
                             <div id="width100">
@@ -388,6 +398,13 @@
                 </div>
             </div>
 
+            <div class="scrollfixed">
+                <a href="#">
+                    <i> <img src="images/fixed.png" alt="고객의소리"></i>
+                    <span>고객의소리</span>
+                </a>
+            </div>
+
 
             <div id="main_visual">
                 <div id="main">
@@ -684,7 +701,22 @@
             <div id="contents1">
                 <div id="mainvisual_map">
                     <div class="map_left">
-                        <div class="mapPt"></div>
+                        <div class="mapPt">
+                            <a href="#none" id="pohang" class="point">포항</a>
+                            <a href="#none" id="daegu" class="point">대구</a>
+                            <a href="#none" id="ulsan" class="point">울산</a>
+                            <a href="#none" id="gimhae" class="point">김해</a>
+                            <a href="#none" id="sachun" class="point">사천</a>
+                            <a href="#none" id="yeosu" class="point">여수</a>
+                            <a href="#none" id="jeju" class="point">제주</a>
+                            <a href="#none" id="gwangju" class="point">광주</a>
+                            <a href="#none" id="muan" class="point">무안</a>
+                            <a href="#none" id="gunsan" class="point">군산</a>
+                            <a href="#none" id="chungju" class="point">청주</a>
+                            <a href="#none" id="gimpo" class="point">김포</a>
+                            <a href="#none" id="yangyang" class="point">양양</a>
+                            <a href="#none" id="wonju" class="point">원주</a>
+                        </div>
                         <div class="mapTxt">
                             <div class="txt">
                                 <p class="maptxt1 redLine">네트워크</p>
@@ -706,18 +738,189 @@
                     <div class="map_right">
                         <div class="rightBox">
                             <div class="rightTxt">
-                                <h2>포항공항</h2>
-                                <div class="weather">
-                                    <span><p>18</p></span>
-                                    <span><p>맑음</p></span>
-                                    <span><img src="images/sun.svg" alt="sun" width="100" height="100"></span>
+                                <div class="rTxt pohang">
+                                    <h2>포항공항</h2>
+                                    <div class="weather">
+                                        <span><p>18</p></span>
+                                        <span><p>맑음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 37926 경북 포항시 남구 동해안 일월로 18</p>
+                                        <p>바로가기</p>
+                                    </div>
+                                    <div class="airportImg"></div>
                                 </div>
-                                <div class="bottomTxt">
-                                    <p>주소:37926 경북 포항시 남구 동해안 일월로 18</p>
-                                    <p>바로가기</p>
+                                <div class="rTxt daegu">
+                                    <h2>대구국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>15</p></span>
+                                        <span><p>비</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 41052 대구 동구 공항로 221</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt ulsan">
+                                    <h2>울산공항</h2>
+                                    <div class="weather">
+                                        <span><p>18</p></span>
+                                        <span><p>구름많음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 44238 울산 북구 산업로 1103</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt gimhae">
+                                    <h2>김해국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>22</p></span>
+                                        <span><p>맑음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 46718 부산 강서구 공항진입로 108</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt sachun">
+                                    <h2>사천공항</h2>
+                                    <div class="weather">
+                                        <span><p>21</p></span>
+                                        <span><p>구름많음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 52516 경남 사천시 사천읍 사천대로 1971</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt yeosu">
+                                    <h2>여수공항</h2>
+                                    <div class="weather">
+                                        <span><p>21</p></span>
+                                        <span><p>흐림</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 59606 전남 여수시 율촌면 여순로 386</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt jeju">
+                                    <h2>제주국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>22</p></span>
+                                        <span><p>맑음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 63115 제주특별자치도 제주시 공항로 2</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt gwangju">
+                                    <h2>광주공항</h2>
+                                    <div class="weather">
+                                        <span><p>21</p></span>
+                                        <span><p>구름많음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 62425 광주 광산구 상무대로 420-25</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt muan">
+                                    <h2>무안국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>22</p></span>
+                                        <span><p>구름많음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 58533 전남 무안군 망운면 공항로 970-260</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt gunsan">
+                                    <h2>군산공항</h2>
+                                    <div class="weather">
+                                        <span><p>13</p></span>
+                                        <span><p>뇌우</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 54168 전북 군산시 옥서면 산동길2</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt chungju">
+                                    <h2>청주국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>12</p></span>
+                                        <span><p>비</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 28142 충북 청주시 청원구 내수읍 오창대로 980</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt gimpo">
+                                    <h2>김포국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>14</p></span>
+                                        <span><p>흐림</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 07505 서울 강서구 하늘길 76</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt yangyang">
+                                    <h2>양양국제공항</h2>
+                                    <div class="weather">
+                                        <span><p>17</p></span>
+                                        <span><p>맑음</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 25042 강원 양양군 손양면 공항로 201</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
+                                </div>
+                                <div class="rTxt wonju">
+                                    <h2>원주공항</h2>
+                                    <div class="weather">
+                                        <span><p>13</p></span>
+                                        <span><p>흐림</p></span>
+                                        <span class="weatherImg"></span>
+                                    </div>
+                                    <div class="bottomTxt">
+                                        <p>주소 : 25239 강원 횡성군 횡성읍 횡성로 38</p>
+                                        <p>바로가기</p>
+                                        <div class="airportImg"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="airportImg"></div>
                         </div>
                         <div class="imgBox"></div>
                     </div>
@@ -841,8 +1044,8 @@
                         <p>사회공헌</p>
                         <p>Social Value</p>
                         <p>기업과 사회, 환경이 공존할 수 있도록 지속적으로 사회적 책임을 실천하고 있습니다.</p>
-                        <div class="conIcon">
-                            <a href="#" style="top:0px; opacity:1;">
+                        <div class="hoverItem cf">
+                            <a href="#" class="fl">
                                 <div class="icon">
                                     <img src="images/icon_Social1.png" alt="Social1">
                                     <p>나눔의 실천</p>
@@ -853,7 +1056,7 @@
                                     <p>다문화가정 지원 언어교실 본격 추진</p>
                                 </div>
                             </a>
-                            <a href="#" style="top:0px; opacity:1;">
+                            <a href="#" class="fl">
                                 <div class="icon">
                                     <img src="images/icon_Social2.png" alt="Social2">
                                     <p class="midBeAf">깨끗한 공기업</p>
@@ -864,7 +1067,7 @@
                                     <p>신뢰받는 청렴 공기업을 위한 활동</p>
                                 </div>
                             </a>
-                            <a href="#" class="mj0" style="top:0px; opacity:1;">
+                            <a href="#" class="fl">
                                 <div class="icon">
                                     <img src="images/icon_Social3.png" alt="Social3">
                                     <p>친환경 공항</p>
@@ -908,8 +1111,6 @@
                             <li><img src="images/banner8.jpg" alt="#"></li>
                             <li><img src="images/banner9.PNG" alt="#"></li>
                             <li><img src="images/banner10.jpg" alt="#"></li>
-                            <li><img src="images/banner11.jpg" alt="#"></li>
-                            <li><img src="images/banner12.jpg" alt="#"></li>
                             <li><img src="images/banner13.png" alt="#"></li>
                         </ul>
                     </div>
@@ -919,12 +1120,46 @@
         <footer>
             <div id="footerWrap">
                 <div class="footerTop">
-                    <div class="ftLeft"></div>
-                    <div class="ftRight"></div>
+                    <div class="familyBtn">
+                        <ul>
+                            <li><button type="button" class="fam_btn1">패밀리사이트</button></li>
+                            <li><button type="button" class="fam_btn2">관련사이트</button></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footerBottom">
-                    <div class="fbLeft"></div>
-                    <div class="fbRight"></div>
+                    <div class="fbLeft cf">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">영상정보처리기기 운영관리방침</a> </li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">고객서비스현장</a></li>
+                        </ul>
+                        <address class="fl">
+                            <span>07505 서울 강서구 하늘길 78</span>
+                            <span class="ad_before">전화번호 1661-2626</span>
+                        </address>
+                        <p class="cf">© 2020 Korea Airports Corporation. All Rights Reserved.</p>
+                    </div>
+                    <div class="fbRight">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/footer1.png" alt="굿콘텐츠서비스"> </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/footer2.png" alt="웹접근성인증마크"> </a>
+                            </li>
+                            <li class="sns_ico">
+                                <a href="#"><img src="images/footer3.png" alt="페이스북"> </a>
+                            </li>
+                            <li class="sns_ico">
+                                <a href="#"><img src="images/footer4.png" alt="네이버블로그"> </a>
+                            </li>
+                            <li class="sns_ico">
+                                <a href="#"><img src="images/footer5.png" alt="인스타그램"> </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
