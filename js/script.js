@@ -201,4 +201,20 @@ $(function() {
     })
 
 
+    // top_search
+    var searchBtn = $('.top_search_btn');
+    var searchOn = $('.top_search_on');
+    var btnClose = $('.btn_close');
+
+    searchOn.hide();
+    searchBtn.click(function() {
+        searchOn.show();
+    });
+
+    btnClose.click(function() {
+        searchOn.hide();
+    })
+
+
+
 })
